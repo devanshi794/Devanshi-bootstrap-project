@@ -4,14 +4,31 @@
     background-size: cover;
 }
 
-.grid-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* gap: 8px; */
 }
 
-.grid-item {
-    padding: 3px;
+.div3 {
+    grid-row: span 2 / span 2;
+}
+
+.div4 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+img {
+    width: 100%;
 }
 
 .work-btn {
@@ -134,10 +151,97 @@
     transition: all 0.3s ease;
 }
 
-.social-icons a:hover {
-    background: #2a44ff;
+.lists ul li .icon-box:hover {
+    background-color: #fd7e14;
+
+}
+
+.lists ul li .icon-box-1:hover {
+    background-color: #007bff;
+
+}
+
+.lists ul li .icon-box-2:hover {
+    background-color: #00d0ff;
+
+}
+
+.lists ul li .icon-box-3:hover {
+    background-color: #00d0ff;
+
+}
+
+.lists ul li .icon-box-4:hover {
+    background-color: #ff1212;
+
+}
+
+.lists ul li .icon-box-5:hover {
+    background-color: #dc3545;
+
+}
+
+.lists ul li .icon-box-6:hover {
+    background-color: #dc3545;
+
+}
+
+.lists ul li .icon-box-7:hover {
+    background-color: #dba905;
+
+}
+
+.lists ul li .icon-box-8:hover {
+    background-color: #ee05ac;
+
+}
+
+.lists ul li .icon-box-9:hover {
+    background-color: #00d0ff;
+
+}
+
+.lists ul li .icon-box-10:hover {
+    background-color: #007bff;
+
+}
+
+.lists ul li .icon-box-11:hover {
+    background-color: #007bff;
+
+}
+
+.lists ul li .icon-box-12:hover {
+    background-color: #ee05ac;
+
+}
+
+.lists ul li a:hover .fa-rss,
+a:hover .fa-faceb,
+a:hover .fa-twitter-1,
+a:hover .fa-vimeo-v,
+a:hover .fa-youtube,
+a:hover .fa-instagram-1,
+a:hover .fa-pinterest-p,
+a:hover .fa-google-plus-g,
+a:hover .fa-dribbble,
+a:hover .fa-skype,
+a:hover .fa-linkedin,
+a:hover .fa-behance,
+a:hover .fa-flickr {
     color: #fff;
-    border-color: #2a44ff;
+    animation: socialicon 0.08s linear;
+}
+
+
+@keyframes socialicon {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .btn-custom {
