@@ -1,0 +1,207 @@
+.service {
+    background: url(../images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item {
+    padding: 3px;
+}
+
+.work-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    padding-left: 44px;
+    border-radius: 28px;
+    background: #f3f5f7;
+    color: #374151;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+    transition: background .18s ease, box-shadow .18s ease;
+    overflow: visible;
+}
+
+.work-btn::before {
+    content: "➜";
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-8px);
+    opacity: 0;
+    transition: transform .22s ease, opacity .22s ease;
+    font-size: 14px;
+    color: #4b5563;
+    pointer-events: none;
+}
+
+.work-btn:hover::before {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+
+.work-btn:hover {
+    box-shadow: 0 8px 22px rgba(17, 24, 39, 0.08);
+    background: #f8fafc;
+}
+
+.icons:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.team .team-icon li {
+    color: gray;
+    width: 27px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.team .team-icon li:hover a i {
+    animation: icon 0.3s linear;
+}
+
+@keyframes icon {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.team .team-icon li:hover {
+    width: 120px;
+}
+
+.progress-bar {
+    background-color: #2a44ff;
+}
+
+.blog-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.blog-item p:hover {
+    color: #2147ff;
+}
+
+.blog-item small {
+    color: gray;
+}
+
+.blog-item img {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.contact-info h5 {
+    font-weight: 600;
+}
+
+.social-icons {
+    text-align: left;
+}
+
+.social-icons a {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 4px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #2a44ff;
+    color: #fff;
+    border-color: #2a44ff;
+}
+
+.btn-custom {
+    background: #fff;
+    border: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.btn-custom:hover {
+    background: #2a44ff;
+    color: #fff;
+    border-color: #2a44ff;
+}
+
+.newsletter {
+    background-color: #2147ff;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.newsletter .input-group {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.newsletter .form-control {
+    border-radius: 0;
+}
+
+.newsletter .btn {
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.newsletter small {
+    display: block;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+.footer h6 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.footer a {
+    color: #555;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+
+
+
+/* service section end */
